@@ -1,0 +1,209 @@
+body::before {
+    content: "";
+    background: url("../images/photo_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    /* Adjust the blur radius as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Place it behind the content */
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: #666;
+}
+
+/* Typography */
+h1#title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 3.2em;
+    color: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    padding-top: 60px;
+    /* Adjust the padding for responsiveness */
+    max-width: 100%;
+    /* Make it responsive */
+    text-align: center;
+    position: relative;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Add a semi-transparent background */
+    border-radius: 10px;
+    /* Add rounded corners for a popup effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Add a subtle shadow */
+    padding: 20px;
+    /* Add some padding for better readability */
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    line-height: 2.8em;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #aeaeae;
+}
+
+p.small {
+    font-size: 0.8em;
+    margin: 20px 0 0;
+}
+
+
+/* Layout */
+.container {
+    margin: 0;
+}
+
+.top {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../images/photo_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    position: relative;
+}
+
+.login-box.animated.fadeInUp {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent background for matte finish */
+    max-width: 340px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.login-box.animated.fadeInUp .box-header {
+    background-color: #665851;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.login-box.animated.fadeInUp label {
+    font-weight: 600;
+    font-size: 1em;
+    color: #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: block;
+}
+
+.login-box.animated.fadeInUp input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 2em;
+    color: #555;
+    width: 80%;
+}
+
+.login-box.animated.fadeInUp input:focus {
+    outline: none;
+    border-color: #665851;
+    transition: 0.3s;
+}
+
+.login-box.animated.fadeInUp button {
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 1px;
+    background-color: #665851;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.login-box.animated.fadeInUp button:hover {
+    background-color: #543b67;
+}
+
+.login-box.animated.fadeInUp .small {
+    font-size: 0.8em;
+    margin: 15px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-box.animated.fadeInUp {
+        max-width: 90%;
+    }
+}
+
+.selected {
+    color: #665851 !important;
+    transition: 0.5s;
+}
+
+.error-message {
+    color: #f00;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-align: center;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.error-message.show-error {
+    opacity: 1;
+}
+
+
+/* Animation Delay */
+#logo {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+}

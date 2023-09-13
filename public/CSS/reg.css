@@ -1,0 +1,109 @@
+/* Reset some default styles */
+body,
+ul,
+li,
+p,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the registration form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select,
+input[type="date"],
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    /* Adjust the text color for better visibility */
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    /* Highlight the input fields when focused */
+    border-color: #555;
+}
+
+select {
+    appearance: none;
+    /* Remove default styles on select elements */
+    padding: 10px;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Styling for success and error messages */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.error-message {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+/* Make the form responsive */
+@media (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
+}
